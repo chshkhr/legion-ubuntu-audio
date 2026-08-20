@@ -1,0 +1,12 @@
+# Local kernel source trees and downloads
+/linux-*/
+/linux-*.tar.*
+
+# Locally built Debian packages and metadata
+/*.deb
+/*.buildinfo
+/*.changes
+/sha256sums.asc
+
+# Local GRUB test configuration; never install or publish it implicitly
+/grub-legion-audio-testing.cfg
