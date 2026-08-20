@@ -10,3 +10,6 @@
 
 # Local GRUB test configuration; never install or publish it implicitly
 /grub-legion-audio-testing.cfg
+
+# Output created by setup-kernel.sh
+/build/

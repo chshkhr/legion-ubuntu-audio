@@ -14,7 +14,20 @@ The project currently provides:
   unencrypted `/boot` filesystem;
 - AW88399 post-boot verification and safe recovery instructions.
 
-Start with [the Ubuntu 26.04 guide](UBUNTU_26_04.md).
+## The easy route
+
+If you want working speakers rather than a kernel-building hobby, start with
+the [friendly installation guide](INSTALL.md). The included helper performs
+preflight checks, downloads a pinned and verified source/patch combination,
+builds Ubuntu packages, and installs them without removing your stock kernel
+or rebooting automatically:
+
+```sh
+./setup-kernel.sh
+```
+
+For encrypted-root troubleshooting and technical detail, continue with
+[the Ubuntu 26.04 recovery guide](UBUNTU_26_04.md).
 
 ## Kernel 7.3 status
 
@@ -61,6 +74,9 @@ GRUB or remove `quiet splash` temporarily to use the text prompt.
 
 ## Repository layout
 
+- [`INSTALL.md`](INSTALL.md): short, ordinary-user installation path.
+- [`setup-kernel.sh`](setup-kernel.sh): reproducible, guarded kernel builder
+  and installer.
 - [`UBUNTU_26_04.md`](UBUNTU_26_04.md): installation, recovery, validation,
   and troubleshooting guide.
 - [`tools/ubuntu-initramfs`](tools/ubuntu-initramfs): permanent early-`i915`
