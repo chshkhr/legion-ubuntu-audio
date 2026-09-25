@@ -101,7 +101,7 @@ sudo apt-get update
 sudo apt-get install -y \
 	bc bison build-essential ca-certificates curl debhelper dwarves fakeroot \
 	flex libelf-dev libncurses-dev libssl-dev python3 rsync xz-utils \
-	libdw-dev
+	libdw-dev gawk
 
 mkdir -p "$work_dir/downloads"
 archive=$work_dir/downloads/linux-${KERNEL_VERSION}.tar.xz
